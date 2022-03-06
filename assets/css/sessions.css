@@ -1,0 +1,100 @@
+/************** SITE WIDE *****************/
+@font-face {
+    font-family: alexbrush;
+    src: url("assets\fonts\AlexBrush-Regular.ttf");
+  }
+  
+  @font-face {
+    font-family: greatvibes;
+    src: url("assets\fonts\GreatVibes-Regular.otf");
+  }
+
+  @font-face {
+    font-family: monst-light;
+    src: url("assets\fonts\Montserrat-Light.ttf");
+  }
+  
+  
+html, body{
+    margin: 0 auto;
+    scroll-behavior: smooth;
+    overflow-y:auto;
+}
+
+
+/************** HEAD IMAGE *****************/
+.coverPhoto{
+    position: relative;
+
+  
+}
+.coverPhoto img{
+
+    height: 700px;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/****************** MAIN CONTENT *****************/
+/************** filmIntro ******************/
+#sessionIntro{
+    background-color: black;
+    padding-top: 60px;
+    padding-bottom: 120px;
+    margin:0 auto;
+}
+#sessionIntroItems{
+    color:white;
+    margin-left: 20%;
+    margin-right: 20%;
+    word-wrap: break-word;
+}
+#sessionIntroItems h1{
+    text-align: center;
+}
+#sessionIntroItems p{
+    text-align: center;
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 80px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #555; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+
+  #myBtn:hover {
+    background-color: black; /* Add a dark-grey background on hover */
+  }
+  
+
+/************** textBox Templates ******************/
+
+#textBox{
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 120px;
+    margin:0 auto;
+}
+#textBoxItems{
+    margin-left: 20%;
+    margin-right: 20%;
+    word-wrap: break-word;
+}
+#textBoxItems h1{
+    text-align: left;
+}
+#textBoxItems p{
+    font-size: x-large;
+    text-align: left;
+}

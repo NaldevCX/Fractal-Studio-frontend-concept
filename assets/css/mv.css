@@ -1,0 +1,149 @@
+@font-face {
+  font-family: alexbrush;
+  src: url("assets\fonts\AlexBrush-Regular.ttf");
+}
+
+@font-face {
+  font-family: greatvibes;
+  src: url("assets\fonts\GreatVibes-Regular.otf");
+}
+
+@font-face {
+  font-family: monst-light;
+  src: url("assets\fonts\Montserrat-Light.ttf");
+}
+
+
+
+
+html, body{
+    margin: 0 auto;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  
+}
+
+
+/************** HEAD IMAGE *****************/
+.coverPhoto{
+    position: relative;
+
+  
+}
+.coverPhoto img{
+    filter:saturate(0);
+    height: 700px;
+    width: 100%;
+    object-fit: cover;
+}
+
+  
+  
+
+
+
+
+
+
+/****************** MAIN CONTENT *****************/
+.row {
+
+    display: flex;
+    flex-wrap: wrap;
+
+    padding-top: 4%;
+    padding-bottom: 10%;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    height: 250px;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+
+/************** filmIntro ******************/
+#filmIntro{
+    background-color: white;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    margin:0 auto;
+}
+#filmIntroItems{
+    margin-left: 20%;
+    margin-right: 20%;
+    word-wrap: break-word;
+}
+#filmIntroItems h1{
+    text-align: center;
+}
+#filmIntroItems p{
+  font-size: large;
+    text-align: left;
+}
+
+/************** COVID Guidelines ******************/
+#guidelinesIntro{
+
+    background-color: rgb(177, 177, 177);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: auto;
+}
+#guidelinesIntroItems{
+
+    margin-left: 15%;
+    margin-right: 15%;
+    word-wrap: break-word;
+}
+
+#guidelinesIntroItems p{
+    text-align: left;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 80px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #555; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: black; /* Add a dark-grey background on hover */
+}
+
+/************** TESTING RULESETS **************/
+
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
